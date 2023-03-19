@@ -1,0 +1,30 @@
+{
+  "flashGatewayApp": {
+    "flashAppPc": {
+      "home": {
+        "title": "Pcs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Pc",
+        "createOrEditLabel": "Create or edit a Pc",
+        "notFound": "No Pcs found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Pc {{ id }}?"
+      },
+      "detail": {
+        "title": "Pc"
+      },
+      "id": "ID",
+      "make": "Make",
+      "model": "Model",
+      "price": "Price"
+    }
+  },
+  "flashApp": {
+    "flashAppPc": {
+      "created": "A new Pc is created with identifier {{ param }}",
+      "updated": "A Pc is updated with identifier {{ param }}",
+      "deleted": "A Pc is deleted with identifier {{ param }}"
+    }
+  }
+}

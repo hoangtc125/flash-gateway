@@ -1,0 +1,30 @@
+{
+  "flashGatewayApp": {
+    "flashAppPc": {
+      "home": {
+        "title": "Pcs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Pc",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Pc",
+        "notFound": "No Pcs found"
+      },
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Pc {{ id }}?"
+      },
+      "detail": {
+        "title": "Pc"
+      },
+      "id": "ID",
+      "make": "Make",
+      "model": "Model",
+      "price": "Price"
+    }
+  },
+  "flashApp": {
+    "flashAppPc": {
+      "created": "Một Pc mới được tạo với định danh {{ param }}",
+      "updated": "Một Pc cập nhật với định danh {{ param }}",
+      "deleted": "Một Pc đã xóa với định danh {{ param }}"
+    }
+  }
+}

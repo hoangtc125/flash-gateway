@@ -1,21 +1,21 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
 version: '3.8'
 services:
-  flashgateway-app:
-    image: flashgateway
-    environment:
-      - _JAVA_OPTIONS=-Xmx512m -Xms256m
-      - SPRING_PROFILES_ACTIVE=prod,api-docs
-      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
-      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
-      - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
-      - SPRING_DATA_MONGODB_URI=mongodb://flashgateway-mongodb:27017/?waitQueueMultiple=1000
-      - SPRING_DATA_MONGODB_DATABASE=flashGateway
-      - JHIPSTER_SLEEP=60 # gives time for microservices to boot before the gateway, the entire stack will be ready to accept incoming requests.
-    # If you want to expose these ports outside your dev PC,
-    # remove the "127.0.0.1:" prefix
-    ports:
-      - 127.0.0.1:8080:8080
+  # flashgateway-app:
+  #   image: flashgateway
+  #   environment:
+  #     - _JAVA_OPTIONS=-Xmx512m -Xms256m
+  #     - SPRING_PROFILES_ACTIVE=prod,api-docs
+  #     - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+  #     - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
+  #     - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
+  #     - SPRING_DATA_MONGODB_URI=mongodb://flashgateway-mongodb:27017/?waitQueueMultiple=1000
+  #     - SPRING_DATA_MONGODB_DATABASE=flashGateway
+  #     - JHIPSTER_SLEEP=60 # gives time for microservices to boot before the gateway, the entire stack will be ready to accept incoming requests.
+  #   # If you want to expose these ports outside your dev PC,
+  #   # remove the "127.0.0.1:" prefix
+  #   ports:
+  #     - 127.0.0.1:8080:8080
   flashgateway-mongodb:
     image: mongo:4.4.15
     # If you want to expose these ports outside your dev PC,
